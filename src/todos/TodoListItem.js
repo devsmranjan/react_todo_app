@@ -3,10 +3,10 @@ import './TodoListItem.css';
 
 const TodoListItem = ({ todo, onRemovePressed, onCompletedPressed }) => {
     const handleRemoveButton = () => {
-        onRemovePressed(todo.text);
+        onRemovePressed(todo.id);
     };
     const handleCompletedButton = () => {
-        onCompletedPressed(todo.text);
+        onCompletedPressed(todo.id);
     };
 
     return (
